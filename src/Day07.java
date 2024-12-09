@@ -2,7 +2,7 @@
 void main() throws IOException {
 
     var pattern = Pattern.compile("\\d+");
-    var equations = Files.lines(Path.of("7.txt"))
+    var equations = Files.lines(Path.of("07.txt"))
             .map(line -> pattern.matcher(line).results().map(MatchResult::group).map(Long::parseLong).toList())
             .toList();
 

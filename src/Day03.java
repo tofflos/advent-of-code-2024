@@ -1,6 +1,6 @@
 void main() throws IOException {
 
-    var memory = Files.readString(Path.of("3.txt"));
+    var memory = Files.readString(Path.of("03.txt"));
 
     var part1 = Pattern.compile("mul\\((\\d+),(\\d+)\\)")
             .matcher(memory)

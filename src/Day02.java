@@ -1,6 +1,6 @@
 void main() throws IOException {
 
-    var reports = Files.lines(Path.of("2.txt"))
+    var reports = Files.lines(Path.of("02.txt"))
             .map(line -> line.split(" "))
             .map(arr -> Arrays.stream(arr).map(Integer::parseInt).toList())
             .toList();

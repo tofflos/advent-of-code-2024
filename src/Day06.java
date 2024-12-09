@@ -1,5 +1,5 @@
 void main() throws IOException {
-    var lab = Files.lines(Path.of("6.txt")).map(String::toCharArray).toArray(char[][]::new);
+    var lab = Files.lines(Path.of("06.txt")).map(String::toCharArray).toArray(char[][]::new);
     int startx = -1;
     int starty = -1;
 

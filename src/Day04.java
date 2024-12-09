@@ -1,6 +1,6 @@
 void main() throws IOException {
 
-    var words = Files.lines(Path.of("4.txt")).map(String::toCharArray).toArray(char[][]::new);
+    var words = Files.lines(Path.of("04.txt")).map(String::toCharArray).toArray(char[][]::new);
     var count1 = 0;
     var count2 = 0;
 
@@ -61,7 +61,7 @@ long count2(char[][] words, int x, int y) {
                 || words[y - 1][x + 1] == 'S' && words[y + 1][x - 1] == 'M')) {
             count++;
         }
-    } catch (ArrayIndexOutOfBoundsException ex) {
+    } catch (ArrayIndexOutOfBoundsException _) {
         return 0;
     }
 

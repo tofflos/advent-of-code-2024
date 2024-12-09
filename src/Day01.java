@@ -1,7 +1,7 @@
 void main() throws IOException {
 
     var pattern = Pattern.compile("\\d+");
-    var pairs = Files.lines(Path.of("1.txt"))
+    var pairs = Files.lines(Path.of("01.txt"))
             .map(line -> pattern.matcher(line).results().map(MatchResult::group).map(Integer::parseInt).toList())
             .toList();
 

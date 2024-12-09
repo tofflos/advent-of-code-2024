@@ -1,6 +1,6 @@
 void main() throws IOException {
 
-    var lines = Files.readAllLines(Path.of("5.txt"));
+    var lines = Files.readAllLines(Path.of("05.txt"));
     var ordering = true;
     var rules = new ArrayList<List<Integer>>();
     var pages = new ArrayList<List<Integer>>();
